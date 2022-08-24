@@ -1,7 +1,7 @@
 function isPalindrome(word) {
   // Write your algorithm here
   // checking for palindrome
-  let regex = /[\W_]/g
+  let regex = /[\W_]/g // removes white spaces and non-alphanumeric characters
   let newWord = word.replace(regex, '').split('').reverse().join('')
   console.log(word === newWord)
   return word === newWord
